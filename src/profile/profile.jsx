@@ -9,6 +9,8 @@ function Profile (){
         <div className='profile' >
             Narinder Pal Singh
             <Link to='smartBrain' ><p>Smart Brain App</p></Link>
+            <Link to='/cr' ><p>Crown-cloth App</p></Link>
+
         </div>
     );
 };
