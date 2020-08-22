@@ -1,4 +1,7 @@
 .App {
+  box-sizing: border-box;
   text-align: center;
- 
+  margin: 0px;
+  height: 99vh;
+  width: 99vw;
 }

@@ -2,7 +2,7 @@
 import React from 'react';
 import {Link} from 'react-router-dom'
 
-import './profile.css';
+import './profile.scss';
 
 function Profile (){
     return(

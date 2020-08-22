@@ -12,7 +12,7 @@ const ShopPage = (props)=> { console.log(props);
     
     return (
       <Switch>
-        <Scroll height = {`520px`} >
+        <Scroll height = {`540px`} >
         <Suspense fallback = {<div>....Loading</div>} >
         <Route exact path={`${props.match.path}`} component={CollectionsOverview} />
         <Route exact path={`${props.match.path}/:collectionId`} component={Collections} />

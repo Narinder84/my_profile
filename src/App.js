@@ -8,13 +8,13 @@ import './App.css';
 
 function App() {
   return (
-    <div>
+    <>
       <Switch>
       <Route exact path='/' component={Profile} />
       <Route  path='/smartBrain' component={SmartBrainApp} />
       <Route  path='/cr' component={CrownApp} />
       </Switch>
-    </div>
+    </>
   );
 }
 
