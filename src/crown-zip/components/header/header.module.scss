@@ -4,7 +4,6 @@
   // position: fixed;
   left: 0;
   
-  color: red;
   height: 50px;
   width: 100%;
   display: flex;
@@ -38,6 +37,7 @@
     justify-content: flex-end;
     padding-right: 10px;
     font-size: 1.05em;
+    color: #EDF5FE;
     .option {
       padding: 10px 15px;
     }

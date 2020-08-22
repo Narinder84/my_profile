@@ -7,7 +7,10 @@ import './profile.css';
 function Profile (){
     return(
         <div className='profile' >
-            Narinder Pal Singh
+            <h1>Narinder Pal Singh</h1>
+            <p><em>Full stack developer-<strong>React and Node.js</strong></em></p>
+            <p>I am web developer .</p>
+            <hr></hr>
             <Link to='smartBrain' ><p>Smart Brain App</p></Link>
             <Link to='/cr' ><p>Crown-cloth App</p></Link>
 
