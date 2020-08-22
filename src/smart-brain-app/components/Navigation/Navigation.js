@@ -7,6 +7,9 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
       return (
         <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
           <p onClick={() => onRouteChange('signout')} className='lk f3 link dim black underline pa3 pointer'>Sign Out</p>
+          <p className=' f3 link dim underline pa3 pointer'>
+            <Link className='lk' to='/' >Profile</Link>
+          </p>
         </nav>
       );
     } else {
@@ -14,7 +17,13 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
         <nav style={{display: 'flex', justifyContent: 'flex-end'}}>
           <p onClick={() => onRouteChange('signin')} className=' lk f3 link dim  underline pa3 pointer'>Sign In</p>
           <p onClick={() => onRouteChange('register')} className='lk f3 link dim underline pa3 pointer'>Register</p>
-          <Link className='f3 link dim black underline pa3 pointer' to='/' >Back to Profile Page</Link>
+          <p className=' f3 link dim underline pa3 pointer'>
+            <Link className='lk' to='/cr' > Crown App</Link>
+          </p>
+          <p className=' f3 link dim underline pa3 pointer'>
+            <Link className='lk' to='/' > Profile</Link>
+          </p>
+          
         </nav>
       );
     }

@@ -32,11 +32,17 @@ return (
       <Link className={style.options} to={`${props.match.path}/cart_table`}>
         Check Out
       </Link>
+      
       <Link className={style.options}  >
         <CartIcon/>
         
       </Link>
-      
+      <Link className={style.options} to='/smartBrain'>
+        Smart Brain 
+      </Link>
+      <Link className={style.options} to='/'>
+        Profile
+      </Link>
     </div>
     
   </div>

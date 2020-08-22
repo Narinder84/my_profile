@@ -19,7 +19,7 @@ const CollectionItem = ({item,addItemToCart}) =>{
         
       <div className='collection-footer'>
         <span className='name'>{name}</span>
-        <span className='price'>{price}</span>
+        <span className='price'>${price}</span>
       </div>
       <span className='bt' ><CustomeButton onClick ={()=>addItemToCart( item)} >Add to Cart</CustomeButton></span>
     </div>

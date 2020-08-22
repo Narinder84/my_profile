@@ -11,7 +11,7 @@ function App() {
     <>
       <Switch>
       <Route exact path='/' component={Profile} />
-      <Route  path='/smartBrain' component={SmartBrainApp} />
+      <Route exact path='/smartBrain' component={SmartBrainApp} />
       <Route  path='/cr' component={CrownApp} />
       </Switch>
     </>

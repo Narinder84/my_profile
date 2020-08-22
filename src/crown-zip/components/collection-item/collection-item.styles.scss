@@ -32,7 +32,7 @@
     justify-content: space-between;
     font-size: 18px;
     padding-bottom: 5px;
-
+    color: white;
     .name {
       width: 90%;
       margin-bottom: 15px;
@@ -44,6 +44,7 @@
   }
 }
 .bt{
+  margin-top: 5px; 
   visibility: hidden;
   margin-bottom: 5px;
 }
