@@ -37,6 +37,7 @@ return (
         <CartIcon/>
         
       </Link>
+      <p>|</p>
       <Link className={style.options} to='/smartBrain'>
         Smart Brain 
       </Link>
