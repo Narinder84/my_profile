@@ -8,7 +8,7 @@
 .Contaner{
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 40vw;
   padding: 20px;
   background-color: white;
   border: red solid 1px;
