@@ -14,7 +14,7 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
 					<input
 						className='f4 pa2 w-70 center'
 						type='tex'
-						placeholder='file must end with png , exm:- abcd.png'
+						placeholder=' must give png , eg:- abcd.png'
 						onChange={onInputChange}
 					/>
 					<button
