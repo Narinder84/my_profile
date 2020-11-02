@@ -36,6 +36,7 @@ const initialState = {
 		entries: 0,
 		joined: '',
 	},
+	errorMessage: undefined,
 };
 
 class SmartBrainApp extends Component {
@@ -53,6 +54,12 @@ class SmartBrainApp extends Component {
 				entries: data.entries,
 				joined: data.joined,
 			},
+		});
+	};
+
+	getErrorMessage = (data) => {
+		this.setState({
+			errorMessage: data,
 		});
 	};
 
@@ -144,11 +151,17 @@ class SmartBrainApp extends Component {
 						<FaceRecognition box={box} imageUrl={imageUrl} />
 					</div>
 				) : route === 'signin' ? (
-					<Signin loadUser={this.loadUser} onRouteChange={this.onRouteChange} />
+					<Signin
+						loadUser={this.loadUser}
+						getErrorMessage={this.getErrorMessage}
+						onRouteChange={this.onRouteChange}
+					/>
 				) : (
 					<Register
 						loadUser={this.loadUser}
+						getErrorMessage={this.getErrorMessage}
 						onRouteChange={this.onRouteChange}
+						errorMessage={this.state.errorMessage}
 					/>
 				)}
 			</div>
