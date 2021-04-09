@@ -1,9 +1,5 @@
 /** @format */
 
-html {
-	overflow-x: hidden;
-}
-
 .App {
 	box-sizing: border-box;
 	text-align: center;
