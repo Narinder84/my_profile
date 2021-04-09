@@ -127,7 +127,9 @@ class SmartBrainApp extends Component {
 		}
 		this.setState({ route: route });
 	};
-
+	handleButton = () => {
+		this.setState({ ...this.state, route: 'home' });
+	};
 	render() {
 		const { isSignedIn, imageUrl, route, box } = this.state;
 		return (
@@ -151,11 +153,16 @@ class SmartBrainApp extends Component {
 						<FaceRecognition box={box} imageUrl={imageUrl} />
 					</div>
 				) : route === 'signin' ? (
-					<Signin
-						loadUser={this.loadUser}
-						getErrorMessage={this.getErrorMessage}
-						onRouteChange={this.onRouteChange}
-					/>
+					<>
+						<Signin
+							loadUser={this.loadUser}
+							getErrorMessage={this.getErrorMessage}
+							onRouteChange={this.onRouteChange}
+						/>
+						<button onClick={this.handleButton}>
+							Sign in without Credentials
+						</button>
+					</>
 				) : (
 					<Register
 						loadUser={this.loadUser}
